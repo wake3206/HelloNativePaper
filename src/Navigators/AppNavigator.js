@@ -24,7 +24,7 @@ class HomeScreen extends React.Component {
     render() {
         return (
             <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-                <Text>Home Screen</Text>
+                <Text>Home Screen!!</Text>
                 <Button
                     title="Go to Details"
                     onPress={() => this.props.navigation.navigate('Details')}
@@ -35,10 +35,10 @@ class HomeScreen extends React.Component {
 }
 
 
-const RouteStack =  createStackNavigator(
+const RouteStack = createStackNavigator(
     {
         home: { screen: HomeScreen },
-        appbar:{ screen: AppbarExample}
+        appbar: { screen: AppbarExample }
     },
     {
         navigationOptions: ({ navigation }) => ({
